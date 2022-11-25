@@ -1,5 +1,5 @@
 body {
-    background-image: url("../img/DOFA\ Peradeniya.jpg");
+    background-image: url("../img/DOFA Peradeniya.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -164,4 +164,43 @@ body {
 .social-media:hover {
     color: blue;
     cursor: pointer;
+}
+
+.main-title h1 {
+    position: relative;
+    left: 60px;
+    top: 70px;
+    font-size: 60px;
+    width: 1000px;
+    text-shadow: 0 0 5px black;
+    font-weight: 400;
+}
+
+.main-title h3 {
+    position: relative;
+    left: 65px;
+    top: 75px;
+    font-size: 30px;
+    width: 1000px;
+    color: white;
+    text-shadow: 0 0 10px black;
+    font-weight: 400;
+}
+
+.intro-btn {
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+    top: 150px;
+    left: 65px;
+    padding: 15px;
+    border-radius: 6px;
+    color: black;
+    font-weight: 400;
+    box-shadow: 0 0 20px #0dc8ee;
+}
+
+.intro-btn:hover {
+    text-shadow: 0 0 20px black;
+    color: black;
 }
