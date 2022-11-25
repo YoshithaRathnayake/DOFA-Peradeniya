@@ -195,12 +195,12 @@ body {
     left: 65px;
     padding: 15px;
     border-radius: 6px;
-    color: black;
+    color: white;
     font-weight: 400;
-    box-shadow: 0 0 20px #0dc8ee;
+    background-color: #cc0000;
 }
 
 .intro-btn:hover {
-    text-shadow: 0 0 20px black;
-    color: black;
+    box-shadow: 0 0 20px #cc0000;
+    color: rgb(226, 225, 225);
 }
