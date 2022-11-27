@@ -84,6 +84,7 @@ body {
     backdrop-filter: blur(15px);
     padding: 50px;
     padding-top: 60px;
+    box-shadow: 0 0 100px black;
 }
 
 #intro h1 {
