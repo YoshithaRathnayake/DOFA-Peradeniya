@@ -1,269 +1,367 @@
 html {
-    scroll-behavior: smooth;
-    scroll-padding-top: 75px;
+  scroll-behavior: smooth;
+  scroll-padding-top: 75px;
 }
 
 body {
-    background-image: url("../img/DOFA\ Peradeniya.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    -webkit-animation-name: ScreenFade;
-    -webkit-animation-duration: 3s;
-    animation-name: ScreenFade;
-    animation-duration: 3s;
+  background-image: url("../img/DOFA\ Peradeniya.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  -webkit-animation-name: ScreenFade;
+  -webkit-animation-duration: 3s;
+  animation-name: ScreenFade;
+  animation-duration: 3s;
 }
 
 @-webkit-keyframes ScreenFade {
-    from {
-        opacity: 0;
-    }
+  from {
+    opacity: 0;
+  }
 
-    to {
-        opacity: 1;
-    }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes ScreenFade {
-    from {
-        opacity: 0;
-    }
+  from {
+    opacity: 0;
+  }
 
-    to {
-        opacity: 1;
-    }
+  to {
+    opacity: 1;
+  }
 }
 
+.nav-scroll {
+  position: relative;
+  top: 0px;
+  transition: 1s;
+  animation-name: nav-scroll;
+  animation-duration: 1s;
+  -webkit-animation-name: nav-scroll;
+  -webkit-animation-duration: 1s;
+}
 
-/* Navigation Bar */
+/* Affix Animation */
+
+@keyframes nav-scroll {
+  from {
+    height: 120px;
+  }
+
+  to {
+    height: 100px;
+  }
+}
+
+@-webkit-keyframes nav-scroll {
+  from {
+    height: 120px;
+  }
+
+  to {
+    height: 100px;
+  }
+}
 
 .nav-bar {
-    background-color: rgba(255, 255, 255, 0.637);
-    backdrop-filter: blur(15px);
-    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.541);
-    height: 100px;
-    white-space: nowrap;
-    position: fixed;
-    z-index: 2;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(20px);
+  box-shadow: 0px 15px 18px rgb(0 0 0 / 30%);
+  height: 100px;
+  white-space: nowrap;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
 }
 
 .nav-items {
-    float: right;
-    text-align: right;
-    list-style-type: none;
-    display: flex;
+  float: right;
+  text-align: right;
+  list-style-type: none;
+  display: flex;
 }
 
 .nav-link {
-    padding: 15px;
-    text-transform: uppercase;
-    text-decoration: none;
-    position: relative;
-    top: 8px;
-    color: black;
-    font-weight: 1;
-    border: none;
-    border-radius: 6px;
+  padding: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  position: relative;
+  top: 22px;
+  right: 30px;
+  color: black;
+  font-weight: 1;
+  border: none;
+  border-radius: 6px;
 }
 
 .nav-link:hover {
-    color: blue;
-    background-color: rgb(212, 212, 212);
-    border-radius: 5px;
-    padding: 15px;
+  color: rgb(0, 102, 255);
+  background-color: rgb(226, 226, 226);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.295);
+  border-radius: 5px;
+  padding: 15px;
 }
 
 .nav-img {
-    border-radius: 10px;
-    position: relative;
-    left: 30px;
+  border-radius: 10px;
+  position: relative;
+  top: 15px;
+  left: 30px;
 }
 
 .nav-label {
-    position: relative;
-    left: 45px;
-    font-size: 20px;
-    bottom: 12px;
-    color: black;
-    cursor: pointer;
+  position: relative;
+  left: 45px;
+  font-size: 20px;
+  top: 5px;
+  color: black;
+  cursor: pointer;
 }
 
 .nav-label:hover {
-    color: rgb(70, 70, 70);
-    cursor: pointer;
+  color: rgb(70, 70, 70);
+  cursor: pointer;
 }
 
 .mini-label {
-    position: relative;
-    right: 167px;
-    top: 15px;
-    font-size: 15px;
-    font-weight: 1;
-    color: black;
+  position: relative;
+  right: 170px;
+  top: 31px;
+  font-size: 15px;
+  font-weight: 1;
+  color: black;
 }
 
 .mini-label:hover {
-    color: rgb(88, 88, 88);
-    cursor: pointer;
+  color: rgb(88, 88, 88);
+  cursor: pointer;
 }
 
 .dropbtn {
-    background-color: transparent;
-    color: black;
+  background-color: transparent;
+  color: black;
 }
 
 .dropdown {
-    position: relative;
-    display: inline-block;
-    width: 100%;
-    text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  text-transform: uppercase;
+  z-index: 2;
 }
 
 .dropdown-content {
-    background-color: rgb(255, 255, 255);
-    display: none;
-    position: absolute;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    min-width: 9.5rem;
-    padding: 6px;
-    border-radius: 3px;
-    top: 62px;
+  background-color: rgb(255, 255, 255);
+  display: none;
+  position: absolute;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  min-width: 9.5rem;
+  padding: 6px;
+  border-radius: 3px;
+  top: 76px;
+  right: -30px;
 }
 
 .drop-link {
-    color: #212529;
-    text-align: center;
-    text-decoration: none;
-    display: block;
-    border-radius: 0.25rem;
-    padding: 6px 10px;
-    font-size: 13px;
-    height: 35px;
-    background-color: rgb(245, 245, 245);
+  color: #212529;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  border-radius: 0.25rem;
+  padding: 6px 10px;
+  font-size: 13px;
+  height: 35px;
+  background-color: rgb(245, 245, 245);
 }
 
 .drop-link:hover {
-    background-color: rgb(204, 204, 204);
-    color: black;
-    border-radius: 0.25rem;
+  background-color: rgb(226, 226, 226);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.295);
+  border-radius: 0.25rem;
 }
 
 .dropdown:hover .dropdown-content {
-    display: block;
+  display: block;
 }
 
 .dropdown:hover .dropbtn {
-    background-color: #dedede;
+  background-color: #dedede;
 }
 
 .dropdown-content {
-    width: 100%;
+  width: 100%;
+}
+
+.pre-nav {
+  background-color: rgb(206, 206, 206);
+  height: 50px;;
+}
+
+.pre-nav-icons {
+  padding: 20px;
+  position: relative;
+  top: 8px;
+  left: 10px;
+  color: #222527;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.pre-nav-icons:hover {
+  color: blue;
+  cursor: pointer;
 }
 
 .nav-social-media {
-    padding: 20px;
-    color: #6c757d;
-    font-size: 20px;
+  position: relative;
+  right: 30px;
+  top: 17px;
+  float: right;
+  margin-right: 30px;
+  color: black;
 }
 
 .nav-social-media:hover {
-    color: blue;
-    cursor: pointer;
-}
-
-.nav-icons {
-    position: relative;
-    left: 150px;
+  color: blue;
+  cursor: pointer;
 }
 
 .main-title h1 {
-    position: relative;
-    left: 60px;
-    top: 180px;
-    font-size: 60px;
-    width: 1000px;
-    text-shadow: 0 0 5px black;
-    font-weight: 400;
+  position: relative;
+  left: 60px;
+  top: 180px;
+  font-size: 60px;
+  width: 1000px;
+  text-shadow: 0 0 5px black;
+  font-weight: 400;
 }
 
 .main-title h3 {
-    position: relative;
-    left: 65px;
-    top: 190px;
-    font-size: 30px;
-    width: 1000px;
-    color: white;
-    text-shadow: 0 0 10px black;
-    font-weight: 400;
+  position: relative;
+  left: 65px;
+  top: 190px;
+  font-size: 30px;
+  width: 1000px;
+  color: white;
+  text-shadow: 0 0 10px black;
+  font-weight: 400;
 }
 
 .intro-btn {
-    text-decoration: none;
-    text-transform: uppercase;
-    position: relative;
-    top: 300px;
-    left: 65px;
-    padding: 15px;
-    border-radius: 6px;
-    color: white;
-    font-weight: 400;
-    background-color: #cc0000;
+  text-decoration: none;
+  text-transform: uppercase;
+  position: relative;
+  top: 270px;
+  left: 65px;
+  padding: 15px;
+  border-radius: 6px;
+  color: white;
+  font-weight: 400;
+  background-color: #cc0000;
 }
 
 .intro-btn:hover {
-    box-shadow: 0 0 20px #cc0000;
-    color: rgb(226, 225, 225);
+  box-shadow: 0 0 20px #cc0000;
+  color: rgb(241, 241, 241);
 }
 
 #intro {
-    position: relative;
-    top: 500px;
-    background-color: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(15px);
-    padding: 50px;
-    padding-top: 60px;
-    box-shadow: 0 0 100px black;
+  position: relative;
+  top: 500px;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(15px);
+  padding: 50px;
+  padding-top: 60px;
+  scroll-margin-top: -10px;
+  box-shadow: 0 0 100px black;
 }
 
 #intro h3 {
-    position: relative;
-    bottom: 20px;
-    font-size: 30px;
+  position: relative;
+  bottom: 20px;
+  font-size: 30px;
 }
 
 .footer {
-    position: relative;
-    top: 500px;
-    background-color: rgb(182, 182, 182);
-    padding: 40px;
-    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.541);
+  position: relative;
+  top: 500px;
+  background-color: rgb(182, 182, 182);
+  padding: 40px;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.541);
 }
 
 .footer a {
-    color: black;
-    text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
 
 .footer a:hover {
-    color: blue;
+  color: blue;
 }
 
 .copyright {
-    position: relative;
-    left: 30px;
-    width: 500px;
+  position: relative;
+  left: 30px;
+  width: 500px;
 }
 
 .footer-social-media {
-    float: right;
-    padding: 20px;
-    position: relative;
-    bottom: 35px;
-    right: 20px;
+  float: right;
+  padding: 20px;
+  position: relative;
+  bottom: 35px;
+  right: 20px;
 }
 
 .footer-social-media:hover {
-    color: blue;
-    cursor: pointer;
+  color: blue;
+  cursor: pointer;
+}
+
+#backToTop {
+  display: inline-block;
+  background-color: #b4b4b4;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 25px;
+  right: 5px;
+  transition: 0.3s;
+  opacity: 0.5s;
+  visibility: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+  text-decoration: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+#backToTop::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.5em;
+  line-height: 40px;
+  color: #4d4d4d;
+}
+
+#backToTop:hover {
+  cursor: pointer;
+  background-color: rgb(158, 158, 158);
+}
+
+#backToTop:active {
+  background-color: rgb(97, 97, 97);
+}
+
+#backToTop.show {
+  opacity: 1;
+  visibility: visible;
 }
