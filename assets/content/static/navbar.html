@@ -1,13 +1,37 @@
+<!-- CSS File -->
 <link rel="stylesheet" type="text/CSS" href="../assets/css/styles.css" />
 
-<!-- Navigation Bar -->
 
-<nav class="container-fluid nav-bar navbar navbar-expand-lg navbar-dark">
-  <a href="/"><img src="assets/img/DOFA Logo.jpg" class="nav-img" height="70px"></a>
+<!-- Pre-Navigation Bar -->
+<div class="pre-nav">
+
+  <!-- Contact Details -->
+  <a href="mailto:fna@arts.pdn.ac.lk" class="pre-nav-icons m-3" title="Email"><i
+      class="fa-solid fa-envelope p-2"></i>fna@arts.pdn.ac.lk</a>
+  <a href="tel:+94 081 239 2183" class="pre-nav-icons" title="Call"><i class="fa-solid fa-phone p-2"></i>+94 081
+    239 2183</a>
+
+  <!-- Social Media Icons -->
+  <a href="#"><i class="fa-brands fa-linkedin nav-social-media" title="LinkedIn"></i></a>
+  <a href="#"><i class="fa-brands fa-instagram nav-social-media" title="Instagram"></i></a>
+  <a href="#"><i class="fa-brands fa-twitter nav-social-media" title="Twitter"></i></a>
+  <a href="https://www.facebook.com/people/Department-of-Fine-Arts-Peradeniya/100063535751671/" title="Facebook"><i
+      class="fa-brands fa-facebook nav-social-media"></i></a>
+</div>
+
+<!-- Navigation Bar -->
+<nav class="container-fluid nav-bar">
+
+  <!-- Nav Logo -->
+  <a href="/"><img src="../assets/img/DOFA Logo.jpg" class="nav-img" height="70px"></a>
+
+  <!-- Nav Labels -->
   <a href="/"><label class="nav-label">Department of Fine Arts</label></a>
   <a href="/"><label class="mini-label">University of Peradeniya</label></a>
+
+  <!-- Nav Links -->
   <ul class="nav-items">
-    <li><a href="/" class="nav-link">home</a></li>
+    <li><a href="/" class="nav-link home">home</a></li>
     <div class="dropdown">
       <button class="dropbtn nav-link">about <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"
           fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
@@ -25,8 +49,16 @@
     <li><a href="#" class="nav-link">research</a></li>
     <li><a href="#" class="nav-link">contact</a></li>
   </ul>
-  <div class="nav-icons">
-    <a href="tel:+94 081 239 2183"><i class="fa-solid fa-phone nav-social-media" title="Call"></i></a>
-    <a href="mailto:fna@arts.pdn.ac.lk"><i class="fa-solid fa-envelope nav-social-media" title="Email"></i></a>
-  </div>
 </nav>
+
+<!-- Script tag to disappear the Pre-Navigation on-scroll -->
+<script>
+  $(window).scroll(function () {
+    if ($(document).scrollTop() > 1) {
+      $('.nav-bar').addClass('nav-scroll');
+      console.log("OK");
+    } else {
+      $('.nav-bar').removeClass('nav-scroll');
+    }
+  });
+</script>
